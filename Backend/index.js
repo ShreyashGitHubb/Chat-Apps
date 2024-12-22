@@ -26,8 +26,8 @@ try {
 }
 
 //routes
-app.use("/api/user", userRoute);
-app.use("/api/message", messageRoute);
+app.use("https://chat-app-backend-cppi.onrender.com/api/user", userRoute);
+app.use("https://chat-app-backend-cppi.onrender.com/api/message", messageRoute);
 
 server.listen(PORT, () => {
     console.log(`Server is Running on port ${PORT}`);
