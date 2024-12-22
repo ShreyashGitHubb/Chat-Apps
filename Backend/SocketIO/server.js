@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-apps-fzuv.onrender.com",
+    origin: "https://shreyas-chat-app.netlify.app/",
     methods: ["GET", "POST"],
   },
 });
