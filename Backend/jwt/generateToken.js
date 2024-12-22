@@ -9,9 +9,9 @@ const createTokenAndSaveCookie = (userId, res) => {
   const isProduction = process.env.NODE_ENV === "production";
 
   res.cookie("jwt", token, {
-    httpOnly: true, // Protects from XSS
+    httpOnly: false, // Protects from XSS
     secure: isProduction, // Only set cookies over HTTPS in production
-    sameSite: "strict", // Prevent CSRF
+    sameSite: "none", // Prevent CSRF
 
   });
 
